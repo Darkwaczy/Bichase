@@ -18,9 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hamburger Menu Logic
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.querySelector('.nav-links');
+    const navOverlay = document.getElementById('navOverlay');
+    
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            if (navOverlay) navOverlay.classList.toggle('active');
+        });
+    }
+
+    if (navOverlay) {
+        navOverlay.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+            navOverlay.classList.remove('active');
         });
     }
 
