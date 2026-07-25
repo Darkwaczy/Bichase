@@ -131,6 +131,15 @@ h1, h2, h3, h4 {
     box-shadow: var(--shadow-md);
 }
 
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -687,9 +696,39 @@ h1, h2, h3, h4 {
         font-size: 2.5rem;
     }
 }
+
+.mobile-only {
+    display: none;
+}
+
 @media (max-width: 768px) {
+    .mobile-only {
+        display: block;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
     .nav-links {
-        display: none; /* Hide on mobile for now */
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--card-bg);
+        padding: 1rem 2rem;
+        box-shadow: var(--shadow-sm);
+        gap: 1rem;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-container .login-btn {
+        display: none; /* Hide desktop login button, we could move it to nav-links or keep it small */
     }
     .search-bar {
         flex-direction: column;
