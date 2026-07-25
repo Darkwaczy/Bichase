@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotter - Hyperlocal Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>SPOTTER</h1>
+                    <span>HYPERLOCAL MARKETPLACE</span>
+                </div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="find-local.html" class="active">FIND LOCAL</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="business-solutions.html">BUSINESS SOLUTIONS</a></li>
+                <li><a href="support.html">SUPPORT</a></li>
+            </ul>
+
+            <a href="auth.html" class="btn-primary login-btn" style="text-decoration:none;">
+                LOG IN / SIGN UP
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">SPOT WHAT'S NEAR YOU IN LAGOS, <br> INSTANTLY.</h1>
+            <p class="hero-subtitle">Find Local Products, Services & Sellers. Right Now. 15km Radius.</p>
+            
+            <div class="search-container">
+                <div class="search-bar">
+                    <div class="location-input">
+                        <i class="fa-solid fa-location-dot icon"></i>
+                        <div class="input-group">
+                            <label>Your Current Location:</label>
+                            <input type="text" value="Victoria Island, Lagos">
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="query-input">
+                        <div class="search-icon-wrapper">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <input type="text" placeholder="Find Rice, Barber, Gas, Tailor...">
+                    </div>
+                    <button class="btn-spot-it">
+                        SPOT IT
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="card filter-card">
+                <h3 class="card-header">LOCAL RESULTS (15km)</h3>
+                <div class="card-body">
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Products
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Services
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Sellers
+                    </label>
+                    
+                    <div class="distance-traffic">
+                        <p>Distance Traffic Light</p>
+                        <div class="lights">
+                            <div class="light green-light">G</div>
+                            <div class="line"></div>
+                            <div class="light yellow-light">Y</div>
+                            <div class="line"></div>
+                            <div class="light red-light">R</div>
+                            <div class="line"></div>
+                            <div class="light gray-light"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card map-card small-map">
+                <div class="map-controls-top">
+                    <button class="map-btn active">Map</button>
+                    <button class="map-btn">Satellite</button>
+                </div>
+                <div class="map-fullscreen">
+                    <i class="fa-solid fa-expand"></i>
+                </div>
+                <div class="map-zoom-controls">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-minus"></i></button>
+                </div>
+                <div class="map-street-view">
+                    <i class="fa-solid fa-street-view"></i>
+                </div>
+                <!-- Mock Map Background -->
+                <div class="map-bg"></div>
+                <!-- Radar Circle -->
+                <div class="radar-circle">
+                    <div class="center-dot"></div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="results-area">
+            <div class="card map-card large-map">
+                <div class="map-fullscreen">
+                    <i class="fa-solid fa-expand"></i>
+                </div>
+                <div class="map-zoom-controls">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-minus"></i></button>
+                </div>
+                <div class="map-street-view">
+                    <i class="fa-solid fa-street-view"></i>
+                </div>
+                <div class="map-bg large"></div>
+                <div class="radar-circle large-radar">
+                    <div class="center-dot"></div>
+                </div>
+            </div>
+
+            <div class="card list-view-card">
+                <div class="list-header">
+                    <h3 class="active-tab">LIST VIEW</h3>
+                    <h3 class="inactive-tab">RESULTS 3</h3>
+                </div>
+                
+                <div class="results-grid">
+                    <!-- Card 1 -->
+                    <div class="result-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=200" alt="Rice">
+                        </div>
+                        <div class="item-details">
+                            <h4>Mama T's Rice - 350m</h4>
+                            <div class="status">
+                                <span class="dot green"></span> Green - 350m
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                                <a href="profile.html" class="btn-outline" style="text-decoration:none; display:inline-block; text-align:center; box-sizing:border-box;">View Shop</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="result-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=200" alt="Salon">
+                        </div>
+                        <div class="item-details">
+                            <h4>Lagos Handa - 350m</h4>
+                            <div class="status">
+                                <span class="dot green"></span> Green - 350m
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                                <button class="btn-outline">View Shop</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="result-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80&w=200" alt="Barber">
+                        </div>
+                        <div class="item-details">
+                            <h4>Sind Rice, Barber - 350m</h4>
+                            <div class="status">
+                                <span class="dot green"></span> Green - 350m
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                                <button class="btn-outline">View Shop</button>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Card 4 -->
+                     <div class="result-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1521590832167-7bfcbaa6362d?auto=format&fit=crop&q=80&w=200" alt="Salon 2">
+                        </div>
+                        <div class="item-details">
+                            <h4>Salon - 350m</h4>
+                            <div class="status">
+                                <span class="dot green"></span> Green - 320m
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                                <button class="btn-outline">View Shop</button>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Card 5 -->
+                     <div class="result-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=200" alt="Mama T 2">
+                        </div>
+                        <div class="item-details">
+                            <h4>Mama T's - 350m</h4>
+                            <div class="status">
+                                <span class="dot green"></span> Green - 350m
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                                <button class="btn-outline">View Shop</button>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Card 6 -->
+                     <div class="result-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=200" alt="Tailor">
+                        </div>
+                        <div class="item-details">
+                            <h4>Rice Tailor - 350m</h4>
+                            <div class="status">
+                                <span class="dot green"></span> Green - 320m
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                                <button class="btn-outline">View Shop</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Find</a>
+            <a href="#">Manage</a>
+            <a href="#">Categories</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="footer-logo">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="s-logo">S</span>
+        </div>
+        <div class="copyright">
+            SPOTTER.NG | © 2026
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

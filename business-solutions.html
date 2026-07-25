@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotter - Business Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bs-body">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>SPOTTER</h1>
+                        <span>HYPERLOCAL MARKETPLACE</span>
+                    </div>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="find-local.html">FIND LOCAL</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="business-solutions.html" class="active">BUSINESS SOLUTIONS</a></li>
+                <li><a href="support.html">SUPPORT</a></li>
+            </ul>
+
+            <a href="auth.html" class="btn-primary login-btn" style="text-decoration:none;">
+                LOG IN / SIGN UP
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+        </div>
+    </nav>
+
+    <header class="bs-header">
+        <h2 class="bs-title">BUSINESS SOLUTIONS</h2>
+        <p class="bs-subtitle">EMPOWERING LOCAL MERCHANTS & SERVICES</p>
+    </header>
+
+    <main class="bs-container">
+        
+        <!-- Left Column: Stepper -->
+        <section class="stepper-column">
+            <h3>GET STARTED</h3>
+            
+            <div class="stepper">
+                <div class="step-item">
+                    <div class="step-circle">1</div>
+                    <div class="step-content">
+                        <h4>REGISTER SHOP</h4>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-circle">2</div>
+                    <div class="step-content">
+                        <h4>NIN VERIFICATION <i class="fa-regular fa-id-card step-icon"></i></h4>
+                        <p>Upload ID</p>
+                        <div class="step-progress"><div class="fill" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-circle">3</div>
+                    <div class="step-content">
+                        <h4>FACE VERIFICATION <i class="fa-solid fa-expand step-icon"></i></h4>
+                        <p>Live camera</p>
+                        <div class="step-progress"><div class="fill" style="width: 100%;"></div></div>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-circle">4</div>
+                    <div class="step-content">
+                        <h4>ADD LOCATION <i class="fa-solid fa-map-location-dot step-icon"></i></h4>
+                        <p>Verification status</p>
+                        <div class="step-progress"><div class="fill" style="width: 40%;"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-onboarding">BEGIN ONBOARDING</button>
+        </section>
+
+        <!-- Middle Column: Dashboard Preview -->
+        <section class="dashboard-column">
+            <h3>MERCHANT DASHBOARD PREVIEW</h3>
+            
+            <div class="dashboard-mock">
+                <div class="db-header">
+                    <div class="db-header-left">
+                        <i class="fa-solid fa-location-dot"></i> SPOTTER
+                    </div>
+                    <div class="db-header-right">
+                        <i class="fa-solid fa-bell" style="font-size:0.9rem;"></i>
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                </div>
+
+                <div class="db-body">
+                    <div class="db-top-section">
+                        <h4>Dashboard</h4>
+                    </div>
+
+                    <div class="db-charts">
+                        <div class="db-box">
+                            <h5>Interactive revenue charts</h5>
+                            <div class="mock-bar-chart">
+                                <div class="mock-bar" style="height: 30%"></div>
+                                <div class="mock-bar green" style="height: 60%"></div>
+                                <div class="mock-bar" style="height: 80%"></div>
+                                <div class="mock-bar green" style="height: 40%"></div>
+                                <div class="mock-bar" style="height: 90%"></div>
+                                <div class="mock-bar green" style="height: 100%"></div>
+                                <div class="mock-bar" style="height: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="db-box" style="text-align: center;">
+                            <h5>Nearby lead alerts</h5>
+                            <div class="mock-pie"></div>
+                            <div class="mock-pie" style="background: conic-gradient(var(--green-light) 0% 80%, var(--primary-color) 80% 100%);"></div>
+                        </div>
+                    </div>
+
+                    <div class="db-bottom-grid">
+                        <div class="db-box">
+                            <h5>Transaction feed</h5>
+                            <table class="mock-table">
+                                <tr><th>Name</th><th>Price</th><th>Transaction</th></tr>
+                                <tr><td><i class="fa-solid fa-store" style="color:var(--green-light)"></i> Mama T's</td><td>N15,000</td><td>N20,000</td></tr>
+                                <tr><td><i class="fa-solid fa-scissors" style="color:var(--primary-color)"></i> Lago Handa</td><td>N5,000</td><td>N5,000</td></tr>
+                            </table>
+                        </div>
+                        <div class="db-box">
+                            <h5>Sales target tracking</h5>
+                            <p style="font-size:0.7rem; margin-bottom:5px;">Sales Target</p>
+                            <div class="step-progress"><div class="fill" style="width: 70%;"></div></div>
+                            <p style="font-size:0.7rem; margin-top:10px; margin-bottom:5px;">Sales Target</p>
+                            <div class="step-progress"><div class="fill" style="width: 40%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Alerts -->
+                <div class="floating-alert alert-1">
+                    <h5>NEARBY LEAD ALERTS</h5>
+                    <div class="lights">
+                        <div class="light green-light">G</div>
+                        <div class="line"></div>
+                        <div class="light yellow-light">Y</div>
+                        <div class="line"></div>
+                        <div class="light red-light">R</div>
+                        <div class="line"></div>
+                        <div class="light gray-light"></div>
+                    </div>
+                </div>
+
+                <div class="floating-alert alert-2">
+                    <h5>SPOT YOUR NEXT CUSTOMER</h5>
+                    <div class="lights">
+                        <div class="light green-light">G</div>
+                        <div class="line"></div>
+                        <div class="light yellow-light">Y</div>
+                        <div class="line"></div>
+                        <div class="light red-light">R</div>
+                        <div class="line"></div>
+                        <div class="light gray-light"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-features">
+                <div class="feature-item">
+                    REAL-TIME<br>ANALYTICS
+                </div>
+                <div class="feature-item">
+                    <div class="verified-badge"><i class="fa-solid fa-check"></i></div>
+                    VERIFIED<br>MERCHANT
+                </div>
+                <div class="feature-item">
+                    SECURE<br>TRANSACTIONS
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Column: Pricing -->
+        <section class="pricing-column">
+            <h3>SUBSCRIPTION TIERS</h3>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h4>STARTER</h4>
+                    <p class="subtitle">(Free)</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check-circle"></i> Product listings</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Priority ranking</li>
+                        <li><i class="fa-solid fa-comment"></i> Support</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Verified badges</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <h4>PLAT</h4>
+                    <p class="subtitle">platinum<br>(N5,000/mo)</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check-circle"></i> Product listings</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Priority ranking</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Support</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Verified badges</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card mega">
+                    <h4>MEGA</h4>
+                    <p class="subtitle">planetary<br>(N15,000/mo)</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check-circle"></i> Product listings</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Priority ranking</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Support</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Verified badges</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Verified</li>
+                    </ul>
+                </div>
+            </div>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>PLAN</th>
+                        <th>COMPARISON</th>
+                        <th class="mega-col">COMPARISON</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product listings</td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td class="mega-col"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Priority ranking</td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td class="mega-col"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Priority ranking</td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td class="mega-col"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Support</td>
+                        <td>-</td>
+                        <td class="mega-col"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td><i class="fa-solid fa-xmark"></i></td>
+                        <td class="mega-col"><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </main>
+
+    <footer class="footer simple-footer">
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+            SPOTTER.NG | © 2026
+        </div>
+    </footer>
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="onboardingModal">
+        <div class="modal-content">
+            <!-- Step 1 -->
+            <div class="modal-step active" id="step1">
+                <div class="modal-header">
+                    <div class="step-badge">1</div>
+                    <h3>REGISTER SHOP</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Business Name</label>
+                        <input type="text" placeholder="Business Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Primary Category</label>
+                        <select>
+                            <option>Primary Category</option>
+                            <option>Food & Dining</option>
+                            <option>Grocery</option>
+                            <option>Plumbing</option>
+                        </select>
+                    </div>
+                    <button class="btn-next" onclick="nextStep(2)">NEXT STEP</button>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="modal-step" id="step2">
+                <div class="modal-header">
+                    <div class="step-badge">2</div>
+                    <h3>NIN VERIFICATION</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>NIN Number</label>
+                        <input type="text" placeholder="Enter your 11-digit NIN">
+                    </div>
+                    <div class="form-group">
+                        <label>Upload ID</label>
+                        <div class="upload-box">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <p>Drag and drop or click to upload</p>
+                        </div>
+                    </div>
+                    <button class="btn-next" onclick="nextStep(3)">NEXT STEP</button>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="modal-step" id="step3">
+                <div class="modal-header">
+                    <div class="step-badge">3</div>
+                    <h3>FACE VERIFICATION</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Live Camera</label>
+                        <div class="camera-box">
+                            <i class="fa-solid fa-camera"></i>
+                            <p>Camera feed starting...</p>
+                        </div>
+                    </div>
+                    <button class="btn-next" onclick="nextStep(4)">NEXT STEP</button>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="modal-step" id="step4">
+                <div class="modal-header">
+                    <div class="step-badge">4</div>
+                    <h3>ADD LOCATION</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Store Address</label>
+                        <input type="text" placeholder="Enter full address">
+                    </div>
+                    <div class="form-group">
+                        <div class="mock-map-box">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                    </div>
+                    <button class="btn-next" onclick="nextStep(5)">FINISH ONBOARDING</button>
+                </div>
+            </div>
+
+            <!-- Step 5 (Success) -->
+            <div class="modal-step" id="step5" style="text-align: center; padding: 2rem 1rem;">
+                <div class="verified-badge" style="margin: 0 auto 1.5rem; position: static; width: 100px; height: 100px; font-size: 3.5rem;">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #222;">ONBOARDING COMPLETE!</h3>
+                <p style="color: #666; margin-bottom: 2rem;">Your application has been submitted and is under review. You will be notified once approved.</p>
+                <button class="btn-next" onclick="closeModal()">RETURN TO PAGE</button>
+            </div>
+            
+            <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

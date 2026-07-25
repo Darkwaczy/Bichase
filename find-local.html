@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotter - Find Local</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="map-view-body">
+    <nav class="navbar map-view-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>SPOTTER</h1>
+                        <span>HYPERLOCAL MARKETPLACE</span>
+                    </div>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="find-local.html" class="active">FIND LOCAL</a></li>
+                <li><a href="categories.html">CATEGORIES</a></li>
+                <li><a href="business-solutions.html">BUSINESS SOLUTIONS</a></li>
+                <li><a href="support.html">SUPPORT</a></li>
+            </ul>
+
+            <a href="auth.html" class="btn-primary login-btn" style="text-decoration:none;">
+                LOG IN / SIGN UP
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="map-view-container">
+        <!-- Floating Search Bar -->
+        <div class="floating-search-bar">
+            <div class="search-bar">
+                <div class="location-input">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <div class="input-group">
+                        <label>Your Current Location:</label>
+                        <input type="text" value="Victoria Island, Lagos">
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="query-input">
+                    <div class="search-icon-wrapper green-wrapper">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Find Rice, Barber, Gas, Tailor...">
+                </div>
+                <button class="btn-spot-it">
+                    SPOT IT
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Floating Sidebar -->
+        <aside class="floating-sidebar">
+            <div class="card filter-card">
+                <h3 class="card-header">LOCAL RESULTS (15km)</h3>
+                <div class="card-body">
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Products
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Services
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Sellers
+                    </label>
+                    
+                    <div class="distance-traffic">
+                        <p>Distance Traffic Light</p>
+                        <div class="lights">
+                            <div class="light green-light">G</div>
+                            <div class="line"></div>
+                            <div class="light yellow-light">Y</div>
+                            <div class="line"></div>
+                            <div class="light red-light">R</div>
+                            <div class="line"></div>
+                            <div class="light gray-light"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-results">
+                <!-- Card 1 -->
+                <div class="card result-card-horizontal">
+                    <div class="item-image small">
+                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=150" alt="Rice">
+                    </div>
+                    <div class="item-details">
+                        <h4>Mama T's Rice - 350m</h4>
+                        <div class="status">
+                            <span class="dot green"></span> Green - 350m
+                        </div>
+                        <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                        <div class="actions">
+                            <button class="btn-outline small">View Shop</button>
+                            <button class="btn-primary small">Book</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card result-card-horizontal">
+                    <div class="item-image small">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=150" alt="Salon">
+                    </div>
+                    <div class="item-details">
+                        <h4>Lago Handa Salon</h4>
+                        <div class="status">
+                            <span class="dot green"></span> Green - 350m
+                        </div>
+                        <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                        <div class="actions">
+                            <button class="btn-outline small">View Shop</button>
+                            <button class="btn-primary small">Book</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card result-card-horizontal">
+                    <div class="item-image small">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80&w=150" alt="Barber">
+                    </div>
+                    <div class="item-details">
+                        <h4>Sind Rice, Barber</h4>
+                        <div class="status">
+                            <span class="dot green"></span> Green - 350m
+                        </div>
+                        <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                        <div class="actions">
+                            <button class="btn-outline small">View Shop</button>
+                            <button class="btn-primary small">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Fullscreen Map Map -->
+        <div class="full-map-bg">
+            <div class="map-controls-top-right">
+                <div class="map-fullscreen">
+                    <i class="fa-solid fa-expand"></i>
+                </div>
+                <div class="map-zoom-controls">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+
+            <!-- Radar Background -->
+            <div class="giant-radar">
+                <div class="center-text">Lagos</div>
+            </div>
+
+            <!-- Map Pins (Mock) -->
+            <div class="map-pin pin-red" style="top: 30%; left: 35%;">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pin-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+            </div>
+            
+            <div class="map-pin pin-purple" style="top: 25%; left: 55%;">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pin-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+            </div>
+
+            <div class="map-pin pin-green active-pin" style="top: 45%; left: 60%;">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pin-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                
+                <!-- Map Popup Info Window -->
+                <div class="map-popup">
+                    <div class="map-popup-close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="map-popup-content">
+                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=80" alt="Rice">
+                        <div class="info">
+                            <h4>Mama T's Rice<br>- 350m</h4>
+                            <a href="#" class="chat-link"><i class="fa-solid fa-comment-dots"></i> Chat/Call</a>
+                        </div>
+                    </div>
+                    <div class="map-popup-actions">
+                        <button class="btn-outline small">Chat/Call</button>
+                        <button class="btn-outline small">View Shop</button>
+                        <button class="btn-primary small">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-pin pin-green" style="top: 65%; left: 70%;">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pin-icon"><i class="fa-solid fa-wrench"></i></div>
+            </div>
+
+            <div class="map-pin pin-red" style="top: 55%; left: 90%;">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pin-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+            </div>
+             <div class="map-pin pin-purple" style="top: 85%; left: 50%;">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pin-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
